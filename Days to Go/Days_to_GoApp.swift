@@ -10,23 +10,20 @@ import SwiftData
 
 @main
 struct Days_to_GoApp: App {
-    var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
-        let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
-
+    var container: ModelContainer
+    
+    init() {
         do {
-            return try ModelContainer(for: schema, configurations: [modelConfiguration])
+            container = try ModelContainer(for: Event.self)
         } catch {
-            fatalError("Could not create ModelContainer: \(error)")
+            fatalError("Failed to create ModelContainer for Event.")
         }
-    }()
+    }
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainScreen(modelContext: container.mainContext)
         }
-        .modelContainer(sharedModelContainer)
+        .modelContainer(container)
     }
 }

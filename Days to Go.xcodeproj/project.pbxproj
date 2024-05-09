@@ -8,19 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		7470E50F2BEBB40C0039FFBF /* Days_to_GoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E50E2BEBB40C0039FFBF /* Days_to_GoApp.swift */; };
-		7470E5112BEBB40C0039FFBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5102BEBB40C0039FFBF /* ContentView.swift */; };
-		7470E5132BEBB40C0039FFBF /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5122BEBB40C0039FFBF /* Item.swift */; };
+		7470E5132BEBB40C0039FFBF /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5122BEBB40C0039FFBF /* Event.swift */; };
 		7470E5152BEBB4100039FFBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7470E5142BEBB4100039FFBF /* Assets.xcassets */; };
 		7470E5182BEBB4100039FFBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7470E5172BEBB4100039FFBF /* Preview Assets.xcassets */; };
+		7470E5232BEBB6760039FFBF /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5222BEBB6760039FFBF /* MainScreen.swift */; };
+		7470E5252BEBB71E0039FFBF /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5242BEBB71E0039FFBF /* MainScreenViewModel.swift */; };
+		7470E5272BEC5FD20039FFBF /* AddEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5262BEC5FD20039FFBF /* AddEventScreen.swift */; };
+		7470E5292BEC708E0039FFBF /* EventCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5282BEC708E0039FFBF /* EventCountdownView.swift */; };
+		7470E52C2BEC738C0039FFBF /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E52B2BEC738C0039FFBF /* TimeIntervalExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7470E50B2BEBB40C0039FFBF /* Days to Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Days to Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7470E50E2BEBB40C0039FFBF /* Days_to_GoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Days_to_GoApp.swift; sourceTree = "<group>"; };
-		7470E5102BEBB40C0039FFBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		7470E5122BEBB40C0039FFBF /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		7470E5122BEBB40C0039FFBF /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		7470E5142BEBB4100039FFBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7470E5172BEBB4100039FFBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7470E5222BEBB6760039FFBF /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		7470E5242BEBB71E0039FFBF /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		7470E5262BEC5FD20039FFBF /* AddEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventScreen.swift; sourceTree = "<group>"; };
+		7470E5282BEC708E0039FFBF /* EventCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCountdownView.swift; sourceTree = "<group>"; };
+		7470E52B2BEC738C0039FFBF /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +61,11 @@
 		7470E50D2BEBB40C0039FFBF /* Days to Go */ = {
 			isa = PBXGroup;
 			children = (
+				7470E52A2BEC737F0039FFBF /* Extensions */,
+				7470E51E2BEBB4580039FFBF /* Models */,
+				7470E51F2BEBB4640039FFBF /* Views */,
+				7470E5202BEBB4690039FFBF /* ViewModels */,
 				7470E50E2BEBB40C0039FFBF /* Days_to_GoApp.swift */,
-				7470E5102BEBB40C0039FFBF /* ContentView.swift */,
-				7470E5122BEBB40C0039FFBF /* Item.swift */,
 				7470E5142BEBB4100039FFBF /* Assets.xcassets */,
 				7470E5162BEBB4100039FFBF /* Preview Content */,
 			);
@@ -68,6 +78,48 @@
 				7470E5172BEBB4100039FFBF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7470E51E2BEBB4580039FFBF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7470E5122BEBB40C0039FFBF /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7470E51F2BEBB4640039FFBF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7470E5212BEBB65C0039FFBF /* Screens */,
+				7470E5282BEC708E0039FFBF /* EventCountdownView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7470E5202BEBB4690039FFBF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				7470E5242BEBB71E0039FFBF /* MainScreenViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7470E5212BEBB65C0039FFBF /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				7470E5222BEBB6760039FFBF /* MainScreen.swift */,
+				7470E5262BEC5FD20039FFBF /* AddEventScreen.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		7470E52A2BEC737F0039FFBF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7470E52B2BEC738C0039FFBF /* TimeIntervalExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,8 +192,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7470E5112BEBB40C0039FFBF /* ContentView.swift in Sources */,
-				7470E5132BEBB40C0039FFBF /* Item.swift in Sources */,
+				7470E5252BEBB71E0039FFBF /* MainScreenViewModel.swift in Sources */,
+				7470E52C2BEC738C0039FFBF /* TimeIntervalExtension.swift in Sources */,
+				7470E5292BEC708E0039FFBF /* EventCountdownView.swift in Sources */,
+				7470E5272BEC5FD20039FFBF /* AddEventScreen.swift in Sources */,
+				7470E5132BEBB40C0039FFBF /* Event.swift in Sources */,
+				7470E5232BEBB6760039FFBF /* MainScreen.swift in Sources */,
 				7470E50F2BEBB40C0039FFBF /* Days_to_GoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
