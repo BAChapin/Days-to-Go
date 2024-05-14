@@ -10,11 +10,14 @@ import SwiftData
 
 @Model
 final class Event {
+    typealias ID = String
+    @Attribute(.unique) public var id: String = UUID().uuidString
     var name: String
-    var date: Date
+    var dateCreated: Date = Date()
+    var dateToEvent: Date
     
     var countdownValue: String {
-        let remainingTime = date.timeIntervalSinceNow
+        let remainingTime = dateToEvent.timeIntervalSinceNow
         if remainingTime.numberOfYears > 0 {
             return "\(remainingTime.numberOfYears)y, \(remainingTime.numberOfDays)d, \(remainingTime.numberOfHours)h, \(remainingTime.numberOfMinutes)m, \(remainingTime.numberOfSeconds)s"
         } else if remainingTime.numberOfDays > 0 {
@@ -30,6 +33,6 @@ final class Event {
     
     init(name: String, date: Date) {
         self.name = name
-        self.date = date
+        self.dateToEvent = date
     }
 }

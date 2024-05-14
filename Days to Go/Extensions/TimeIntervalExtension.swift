@@ -8,39 +8,39 @@
 import Foundation
 
 extension TimeInterval {
-    var secondsInMinutes: Double {
+    static var secondsInMinutes: Double {
         60
     }
     
-    var secondsInHours: Double {
+    static var secondsInHours: Double {
         secondsInMinutes * 60
     }
     
-    var secondsInDay: Double {
+    static var secondsInDay: Double {
         secondsInHours * 24
     }
     
-    var secondsInYear: Double {
+    static var secondsInYear: Double {
         secondsInDay * 365
     }
     
     var numberOfYears: Int {
-        Int(floor(self / secondsInYear))
+        Int(floor(self / TimeInterval.secondsInYear))
     }
     
     var numberOfDays: Int {
-        Int(floor(self.truncatingRemainder(dividingBy: secondsInYear) / secondsInDay))
+        Int(floor(self.truncatingRemainder(dividingBy: TimeInterval.secondsInYear) / TimeInterval.secondsInDay))
     }
     
     var numberOfHours: Int {
-        Int(floor(self.truncatingRemainder(dividingBy: secondsInDay) / secondsInHours))
+        Int(floor(self.truncatingRemainder(dividingBy: TimeInterval.secondsInDay) / TimeInterval.secondsInHours))
     }
     
     var numberOfMinutes: Int {
-        Int(floor(self.truncatingRemainder(dividingBy: secondsInHours) / secondsInMinutes))
+        Int(floor(self.truncatingRemainder(dividingBy: TimeInterval.secondsInHours) / TimeInterval.secondsInMinutes))
     }
     
     var numberOfSeconds: Int {
-        Int(self.truncatingRemainder(dividingBy: secondsInMinutes))
+        Int(self.truncatingRemainder(dividingBy: TimeInterval.secondsInMinutes))
     }
 }

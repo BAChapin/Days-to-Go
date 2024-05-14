@@ -16,7 +16,43 @@
 		7470E5272BEC5FD20039FFBF /* AddEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5262BEC5FD20039FFBF /* AddEventScreen.swift */; };
 		7470E5292BEC708E0039FFBF /* EventCountdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5282BEC708E0039FFBF /* EventCountdownView.swift */; };
 		7470E52C2BEC738C0039FFBF /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E52B2BEC738C0039FFBF /* TimeIntervalExtension.swift */; };
+		74D0F1882BF2E96E0022D5A6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D0F1872BF2E96D0022D5A6 /* WidgetKit.framework */; };
+		74D0F18A2BF2E96E0022D5A6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74D0F1892BF2E96E0022D5A6 /* SwiftUI.framework */; };
+		74D0F18D2BF2E96E0022D5A6 /* DaysToGoWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F18C2BF2E96E0022D5A6 /* DaysToGoWidgetBundle.swift */; };
+		74D0F1932BF2E96F0022D5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D0F1922BF2E96F0022D5A6 /* Assets.xcassets */; };
+		74D0F1972BF2E96F0022D5A6 /* DaysToGoWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 74D0F1852BF2E96D0022D5A6 /* DaysToGoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		74D0F19D2BF2EA190022D5A6 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E5122BEBB40C0039FFBF /* Event.swift */; };
+		74D0F19E2BF2EA320022D5A6 /* TimeIntervalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7470E52B2BEC738C0039FFBF /* TimeIntervalExtension.swift */; };
+		74D0F1A22BF2F01E0022D5A6 /* DaysToGoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1A12BF2F01E0022D5A6 /* DaysToGoProvider.swift */; };
+		74D0F1A32BF2F0230022D5A6 /* DaysToGoConfigurationIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F19F2BF2EAF00022D5A6 /* DaysToGoConfigurationIntent.swift */; };
+		74D0F1A52BF2F6180022D5A6 /* EventSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1A42BF2F6180022D5A6 /* EventSnapshot.swift */; };
+		74D0F1A72BF300AF0022D5A6 /* DaysToGoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1A62BF300AF0022D5A6 /* DaysToGoWidget.swift */; };
+		74D0F1A92BF3013B0022D5A6 /* DaysToGoWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1A82BF3013B0022D5A6 /* DaysToGoWidgetView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		74D0F1952BF2E96F0022D5A6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7470E5032BEBB40C0039FFBF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 74D0F1842BF2E96D0022D5A6;
+			remoteInfo = DaysToGoWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		74D0F1982BF2E96F0022D5A6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				74D0F1972BF2E96F0022D5A6 /* DaysToGoWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		7470E50B2BEBB40C0039FFBF /* Days to Go.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Days to Go.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +65,19 @@
 		7470E5262BEC5FD20039FFBF /* AddEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventScreen.swift; sourceTree = "<group>"; };
 		7470E5282BEC708E0039FFBF /* EventCountdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCountdownView.swift; sourceTree = "<group>"; };
 		7470E52B2BEC738C0039FFBF /* TimeIntervalExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalExtension.swift; sourceTree = "<group>"; };
+		74D0F1852BF2E96D0022D5A6 /* DaysToGoWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DaysToGoWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		74D0F1872BF2E96D0022D5A6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		74D0F1892BF2E96E0022D5A6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		74D0F18C2BF2E96E0022D5A6 /* DaysToGoWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysToGoWidgetBundle.swift; sourceTree = "<group>"; };
+		74D0F1922BF2E96F0022D5A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74D0F1942BF2E96F0022D5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D0F19F2BF2EAF00022D5A6 /* DaysToGoConfigurationIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysToGoConfigurationIntent.swift; sourceTree = "<group>"; };
+		74D0F1A12BF2F01E0022D5A6 /* DaysToGoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysToGoProvider.swift; sourceTree = "<group>"; };
+		74D0F1A42BF2F6180022D5A6 /* EventSnapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSnapshot.swift; sourceTree = "<group>"; };
+		74D0F1A62BF300AF0022D5A6 /* DaysToGoWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysToGoWidget.swift; sourceTree = "<group>"; };
+		74D0F1A82BF3013B0022D5A6 /* DaysToGoWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysToGoWidgetView.swift; sourceTree = "<group>"; };
+		74D0F1AA2BF302FE0022D5A6 /* Days to Go.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Days to Go.entitlements"; sourceTree = "<group>"; };
+		74D0F1AB2BF303080022D5A6 /* DaysToGoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DaysToGoWidgetExtension.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,13 +88,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74D0F1822BF2E96D0022D5A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D0F18A2BF2E96E0022D5A6 /* SwiftUI.framework in Frameworks */,
+				74D0F1882BF2E96E0022D5A6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		7470E5022BEBB40C0039FFBF = {
 			isa = PBXGroup;
 			children = (
+				74D0F1AB2BF303080022D5A6 /* DaysToGoWidgetExtension.entitlements */,
 				7470E50D2BEBB40C0039FFBF /* Days to Go */,
+				74D0F18B2BF2E96E0022D5A6 /* DaysToGoWidget */,
+				74D0F1862BF2E96D0022D5A6 /* Frameworks */,
 				7470E50C2BEBB40C0039FFBF /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				7470E50B2BEBB40C0039FFBF /* Days to Go.app */,
+				74D0F1852BF2E96D0022D5A6 /* DaysToGoWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +123,7 @@
 		7470E50D2BEBB40C0039FFBF /* Days to Go */ = {
 			isa = PBXGroup;
 			children = (
+				74D0F1AA2BF302FE0022D5A6 /* Days to Go.entitlements */,
 				7470E52A2BEC737F0039FFBF /* Extensions */,
 				7470E51E2BEBB4580039FFBF /* Models */,
 				7470E51F2BEBB4640039FFBF /* Views */,
@@ -122,6 +185,38 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		74D0F1862BF2E96D0022D5A6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74D0F1872BF2E96D0022D5A6 /* WidgetKit.framework */,
+				74D0F1892BF2E96E0022D5A6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		74D0F18B2BF2E96E0022D5A6 /* DaysToGoWidget */ = {
+			isa = PBXGroup;
+			children = (
+				74D0F18C2BF2E96E0022D5A6 /* DaysToGoWidgetBundle.swift */,
+				74D0F19C2BF2E9950022D5A6 /* DaysToGo */,
+				74D0F1922BF2E96F0022D5A6 /* Assets.xcassets */,
+				74D0F1942BF2E96F0022D5A6 /* Info.plist */,
+			);
+			path = DaysToGoWidget;
+			sourceTree = "<group>";
+		};
+		74D0F19C2BF2E9950022D5A6 /* DaysToGo */ = {
+			isa = PBXGroup;
+			children = (
+				74D0F19F2BF2EAF00022D5A6 /* DaysToGoConfigurationIntent.swift */,
+				74D0F1A12BF2F01E0022D5A6 /* DaysToGoProvider.swift */,
+				74D0F1A42BF2F6180022D5A6 /* EventSnapshot.swift */,
+				74D0F1A62BF300AF0022D5A6 /* DaysToGoWidget.swift */,
+				74D0F1A82BF3013B0022D5A6 /* DaysToGoWidgetView.swift */,
+			);
+			path = DaysToGo;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,15 +227,34 @@
 				7470E5072BEBB40C0039FFBF /* Sources */,
 				7470E5082BEBB40C0039FFBF /* Frameworks */,
 				7470E5092BEBB40C0039FFBF /* Resources */,
+				74D0F1982BF2E96F0022D5A6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				74D0F1962BF2E96F0022D5A6 /* PBXTargetDependency */,
 			);
 			name = "Days to Go";
 			productName = "Days to Go";
 			productReference = 7470E50B2BEBB40C0039FFBF /* Days to Go.app */;
 			productType = "com.apple.product-type.application";
+		};
+		74D0F1842BF2E96D0022D5A6 /* DaysToGoWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74D0F19B2BF2E96F0022D5A6 /* Build configuration list for PBXNativeTarget "DaysToGoWidgetExtension" */;
+			buildPhases = (
+				74D0F1812BF2E96D0022D5A6 /* Sources */,
+				74D0F1822BF2E96D0022D5A6 /* Frameworks */,
+				74D0F1832BF2E96D0022D5A6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DaysToGoWidgetExtension;
+			productName = DaysToGoWidgetExtension;
+			productReference = 74D0F1852BF2E96D0022D5A6 /* DaysToGoWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -153,6 +267,9 @@
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					7470E50A2BEBB40C0039FFBF = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					74D0F1842BF2E96D0022D5A6 = {
 						CreatedOnToolsVersion = 15.2;
 					};
 				};
@@ -171,6 +288,7 @@
 			projectRoot = "";
 			targets = (
 				7470E50A2BEBB40C0039FFBF /* Days to Go */,
+				74D0F1842BF2E96D0022D5A6 /* DaysToGoWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -182,6 +300,14 @@
 			files = (
 				7470E5182BEBB4100039FFBF /* Preview Assets.xcassets in Resources */,
 				7470E5152BEBB4100039FFBF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74D0F1832BF2E96D0022D5A6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D0F1932BF2E96F0022D5A6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +328,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		74D0F1812BF2E96D0022D5A6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74D0F1A52BF2F6180022D5A6 /* EventSnapshot.swift in Sources */,
+				74D0F19D2BF2EA190022D5A6 /* Event.swift in Sources */,
+				74D0F1A72BF300AF0022D5A6 /* DaysToGoWidget.swift in Sources */,
+				74D0F19E2BF2EA320022D5A6 /* TimeIntervalExtension.swift in Sources */,
+				74D0F1A92BF3013B0022D5A6 /* DaysToGoWidgetView.swift in Sources */,
+				74D0F1A22BF2F01E0022D5A6 /* DaysToGoProvider.swift in Sources */,
+				74D0F18D2BF2E96E0022D5A6 /* DaysToGoWidgetBundle.swift in Sources */,
+				74D0F1A32BF2F0230022D5A6 /* DaysToGoConfigurationIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		74D0F1962BF2E96F0022D5A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 74D0F1842BF2E96D0022D5A6 /* DaysToGoWidgetExtension */;
+			targetProxy = 74D0F1952BF2E96F0022D5A6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		7470E5192BEBB4100039FFBF /* Debug */ = {
@@ -327,8 +476,10 @@
 		7470E51C2BEBB4100039FFBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Days to Go/Days to Go.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Days to Go/Preview Content\"";
@@ -356,8 +507,10 @@
 		7470E51D2BEBB4100039FFBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Days to Go/Days to Go.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Days to Go/Preview Content\"";
@@ -382,6 +535,62 @@
 			};
 			name = Release;
 		};
+		74D0F1992BF2E96F0022D5A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DaysToGoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U666T5AU4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaysToGoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DaysToGoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MIETech.Days-to-Go.DaysToGoWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		74D0F19A2BF2E96F0022D5A6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = DaysToGoWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6U666T5AU4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DaysToGoWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DaysToGoWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "MIETech.Days-to-Go.DaysToGoWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -399,6 +608,15 @@
 			buildConfigurations = (
 				7470E51C2BEBB4100039FFBF /* Debug */,
 				7470E51D2BEBB4100039FFBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74D0F19B2BF2E96F0022D5A6 /* Build configuration list for PBXNativeTarget "DaysToGoWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74D0F1992BF2E96F0022D5A6 /* Debug */,
+				74D0F19A2BF2E96F0022D5A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

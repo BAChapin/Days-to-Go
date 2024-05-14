@@ -25,8 +25,8 @@ extension MainScreen {
         private func fetchData() {
             let now = Date()
             do {
-                try modelContext.delete(model: Event.self, where: #Predicate<Event> { $0.date <= now })
-                let descriptor = FetchDescriptor<Event>(sortBy: [SortDescriptor(\.date)])
+                try modelContext.delete(model: Event.self, where: #Predicate<Event> { $0.dateToEvent <= now })
+                let descriptor = FetchDescriptor<Event>(sortBy: [SortDescriptor(\.dateToEvent)])
                 events = try modelContext.fetch(descriptor)
             } catch {
                 print("Fetch failed: \(error.localizedDescription)")
