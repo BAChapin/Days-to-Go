@@ -6,15 +6,17 @@
 //
 
 import SwiftUI
+import Combine
 
 struct EventCountdownView: View {
     
     @State var countdownValue: String
     var event: Event
-    var timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
+    var timer: Publishers.Autoconnect<Timer.TimerPublisher>
     
-    init(event: Event) {
+    init(event: Event, timer: Publishers.Autoconnect<Timer.TimerPublisher>) {
         self.event = event
+        self.timer = timer
         _countdownValue = State(initialValue: event.countdownValue)
     }
     var body: some View {

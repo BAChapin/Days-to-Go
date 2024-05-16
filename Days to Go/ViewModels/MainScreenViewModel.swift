@@ -7,6 +7,7 @@
 
 import SwiftUI
 import SwiftData
+import Combine
 
 extension MainScreen {
     @Observable
@@ -16,9 +17,16 @@ extension MainScreen {
         var addNewEvent: Bool = false
         var deleteEventAlert: Bool = false
         var eventToDelete: Event?
+        var timer = Timer.publish(every: 1, on: .current, in: .common).autoconnect()
+        private var timerAction: AnyCancellable?
         
         init(modelContext: ModelContext) {
             self.modelContext = modelContext
+            timerAction = timer.sink { _ in
+                if self.events.contains(where: { !$0.isValid }) {
+                    self.fetchData()
+                }
+            }
             fetchData()
         }
         

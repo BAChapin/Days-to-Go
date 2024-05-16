@@ -20,7 +20,7 @@ struct MainScreen: View {
         NavigationStack {
             List {
                 ForEach(viewModel.events) { event in
-                    EventCountdownView(event: event)
+                    EventCountdownView(event: event, timer: viewModel.timer)
                         .listRowSeparator(.hidden)
                         .onTapGesture {
                             viewModel.eventToDelete = event
