@@ -31,6 +31,10 @@ final class Event {
         return "\(remainingTime.numberOfSeconds) seconds"
     }
     
+    var isValid: Bool {
+        dateToEvent.timeIntervalSinceNow > 0
+    }
+    
     init(name: String, date: Date) {
         self.name = name
         self.dateToEvent = date
