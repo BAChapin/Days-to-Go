@@ -21,6 +21,7 @@ struct DaysToGoSnapshotTimelineProvider: AppIntentTimelineProvider {
     let modelContext = try! ModelContext(.init(for: Event.self, configurations: .init(isStoredInMemoryOnly: false)))
     
     func events(for configuration: DaysToGoConfigurationIntent) -> [Event] {
+        configuration.specificEvent = configuration.events != .specific ? nil : configuration.specificEvent
         if let id = configuration.specificEvent?.id {
             return try! modelContext.fetch(
                 FetchDescriptor<Event>(predicate: #Predicate { $0.id == id })
