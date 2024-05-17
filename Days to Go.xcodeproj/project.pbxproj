@@ -28,6 +28,10 @@
 		74D0F1A52BF2F6180022D5A6 /* EventSnapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1A42BF2F6180022D5A6 /* EventSnapshot.swift */; };
 		74D0F1A72BF300AF0022D5A6 /* DaysToGoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1A62BF300AF0022D5A6 /* DaysToGoWidget.swift */; };
 		74D0F1A92BF3013B0022D5A6 /* DaysToGoWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1A82BF3013B0022D5A6 /* DaysToGoWidgetView.swift */; };
+		74D0F1AD2BF5BA6A0022D5A6 /* EventBackgroundColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1AC2BF5BA6A0022D5A6 /* EventBackgroundColorData.swift */; };
+		74D0F1AE2BF5BA6A0022D5A6 /* EventBackgroundColorData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1AC2BF5BA6A0022D5A6 /* EventBackgroundColorData.swift */; };
+		74D0F1B12BF5BD9E0022D5A6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1AF2BF5BD9E0022D5A6 /* UIColorExtension.swift */; };
+		74D0F1B22BF5BFDC0022D5A6 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D0F1AF2BF5BD9E0022D5A6 /* UIColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +82,8 @@
 		74D0F1A82BF3013B0022D5A6 /* DaysToGoWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysToGoWidgetView.swift; sourceTree = "<group>"; };
 		74D0F1AA2BF302FE0022D5A6 /* Days to Go.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Days to Go.entitlements"; sourceTree = "<group>"; };
 		74D0F1AB2BF303080022D5A6 /* DaysToGoWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DaysToGoWidgetExtension.entitlements; sourceTree = "<group>"; };
+		74D0F1AC2BF5BA6A0022D5A6 /* EventBackgroundColorData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventBackgroundColorData.swift; sourceTree = "<group>"; };
+		74D0F1AF2BF5BD9E0022D5A6 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				7470E5122BEBB40C0039FFBF /* Event.swift */,
+				74D0F1AC2BF5BA6A0022D5A6 /* EventBackgroundColorData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -181,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				7470E52B2BEC738C0039FFBF /* TimeIntervalExtension.swift */,
+				74D0F1AF2BF5BD9E0022D5A6 /* UIColorExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,6 +330,8 @@
 				7470E52C2BEC738C0039FFBF /* TimeIntervalExtension.swift in Sources */,
 				7470E5292BEC708E0039FFBF /* EventCountdownView.swift in Sources */,
 				7470E5272BEC5FD20039FFBF /* AddEventScreen.swift in Sources */,
+				74D0F1AD2BF5BA6A0022D5A6 /* EventBackgroundColorData.swift in Sources */,
+				74D0F1B22BF5BFDC0022D5A6 /* UIColorExtension.swift in Sources */,
 				7470E5132BEBB40C0039FFBF /* Event.swift in Sources */,
 				7470E5232BEBB6760039FFBF /* MainScreen.swift in Sources */,
 				7470E50F2BEBB40C0039FFBF /* Days_to_GoApp.swift in Sources */,
@@ -335,9 +345,11 @@
 				74D0F1A52BF2F6180022D5A6 /* EventSnapshot.swift in Sources */,
 				74D0F19D2BF2EA190022D5A6 /* Event.swift in Sources */,
 				74D0F1A72BF300AF0022D5A6 /* DaysToGoWidget.swift in Sources */,
+				74D0F1AE2BF5BA6A0022D5A6 /* EventBackgroundColorData.swift in Sources */,
 				74D0F19E2BF2EA320022D5A6 /* TimeIntervalExtension.swift in Sources */,
 				74D0F1A92BF3013B0022D5A6 /* DaysToGoWidgetView.swift in Sources */,
 				74D0F1A22BF2F01E0022D5A6 /* DaysToGoProvider.swift in Sources */,
+				74D0F1B12BF5BD9E0022D5A6 /* UIColorExtension.swift in Sources */,
 				74D0F18D2BF2E96E0022D5A6 /* DaysToGoWidgetBundle.swift in Sources */,
 				74D0F1A32BF2F0230022D5A6 /* DaysToGoConfigurationIntent.swift in Sources */,
 			);
